@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biblothique</title>
+    <link rel="stylesheet" href="biblio.css">
+</head>
+<body>
+    <h1>PUBLIC LIBRARY</h1>
+    <form>
+            <input id="titre" type="text" placeholder="Titre" >
+            <p id="p_titre"></p>
+            <input id="auteur" type="text" placeholder="Auteur">
+            <p id="p_auteur"></p>
+            <input id="prix" placeholder="Prix" type="text">
+            <p id="p_prix"></p>
+            <input id="date_publi" type="date">
+            <p id="p_date"></p>
+            <select value="type" id="lang">
+                <option disabled selected hidden value>selectionner la langue</option>
+                <option value="Arabe">Arabe</option>
+                <option value="Anglais">Anglais</option>
+                <option value="Français">Français</option>
+            </select>
+            <p id="p_langue"></p>
+            <fieldset>
+                <legend>Type</legend>
+                <label><input class="type" type="radio" value="roman" name="type">Roman</label>
+                <label><input class="type" type="radio" value="essay" name="type">Essai</label>
+                <label><input class="type" type="radio" value="comic" name="type">Bande-Dessinée</label>
+            </fieldset>
+            <p id="p_type"></p>
+        
+           <input type="submit" value="Valider" id="btn_valider" >
+           <p id="p_valide" ></p>
+         
+       
+    </form>
+
+    <table id="table">
+        <thead>
+            <th>Titre</th>
+            <th>Auteur</th>
+            <th>Prix</th>
+            <th>Date de publication</th>
+            <th>Langue</th>
+            <th>Type</th>
+            <th>Action</th>
+        </thead>
+        
+    </table>
+
+
+       <script src="biblio.js"></script>
+</body>
+</html>

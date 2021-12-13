@@ -1,0 +1,79 @@
+@font-face {
+    font-family:'Philosopher' ;
+    src: url(Philosopher-Bold.ttf);
+}
+
+body{
+    background-color:#06417A;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    color: #ddad77;
+    align-items: center;
+	justify-content: center;
+    font-family: 'Philosopher';
+    font-size: 60px;
+    text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+::placeholder{
+    color:#d1cccc;
+    font-size: 10px;
+    font-style: italic;
+    padding-left: 12px;
+}
+#btn_valider{
+    cursor: pointer;
+    color:#06417A ;
+    background-color:#ddad77;
+    width: 80px;
+    height: 30px;
+    font-family: 'Philosopher';
+    border-radius: 10px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-color: transparent;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form input[type=text],form input[type=date]{
+    height: 20px;
+    width: 250px;
+    margin-bottom: 1px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    border-color: transparent;
+}
+form select{
+    width:260px;
+    height: 25px;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border-color: transparent;
+}
+label{
+    font-family: 'Philosopher';
+    color: #ddad77;
+}
+form input[type=button]
+{
+    margin-top: 20px;
+    margin-left: 200px;
+}
+legend{ 
+    color: #ddad77;
+}
+thead{
+    background-color: #ddad77;
+    color: #06417A;
+    font-family:'Philosopher' ;
+}
+table{
+    justify-self: center;
+    margin-top: 20px;
+}
